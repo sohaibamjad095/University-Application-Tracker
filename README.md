@@ -14,6 +14,7 @@ A smart web app to manage university applications.
 
 ## Tech Stack
 HTML, CSS, JavaScript
-
+## Live deom
+https://sohaibamjad095.github.io/University-Application-Tracker/
 ## Author
 Muhammad Sohaib
