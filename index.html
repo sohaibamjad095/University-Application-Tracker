@@ -1,0 +1,205 @@
+<div class="stats-grid">
+
+<div class="stat-card">
+<h2 id="totalUniversities">0</h2>
+<p>Total Universities</p>
+</div>
+
+<div class="stat-card">
+<h2 id="submittedCount">0</h2>
+<p>Submitted</p>
+</div>
+
+<div class="stat-card">
+<h2 id="acceptedCount">0</h2>
+<p>Accepted</p>
+</div>
+
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Application Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎓 University Application Tracker</h1>
+
+    <button onclick="toggleDarkMode()" class="dark-btn">
+        🌙 Dark Mode
+    </button>
+
+    <div class="form-box">
+
+        <input id="uniName" placeholder="University Name">
+
+        <input id="country" placeholder="Country">
+
+        <input type="date" id="deadline">
+
+        <input id="ielts" placeholder="IELTS Requirement">
+
+        <input id="sat" placeholder="SAT Requirement">
+
+        <input id="scholarship" placeholder="Scholarship Amount">
+
+        <select id="status">
+            <option>Not Started</option>
+            <option>In Progress</option>
+            <option>Submitted</option>
+            <option>Accepted</option>
+            <option>Rejected</option>
+        </select>
+
+        <button onclick="addUniversity()">
+            Add University
+        </button>
+
+    </div>
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h3>Total</h3>
+            <p id="totalUniversities">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Submitted</h3>
+            <p id="submittedCount">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Accepted</h3>
+            <p id="acceptedCount">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Scholarships</h3>
+            <p id="scholarshipCount">0</p>
+        </div>
+
+    </div>
+
+    <div class="progress-container">
+
+        <div id="progressText">
+            Progress: 0%
+        </div>
+
+        <div class="bar">
+            <div id="progressBar"></div>
+        </div>
+
+    </div>
+
+    <input
+    id="searchInput"
+    placeholder="🔍 Search University..."
+    onkeyup="searchUniversities()">
+
+    <br><br>
+
+    <button onclick="sortByDeadline()">
+        Sort By Deadline
+    </button>
+
+    <button onclick="sortByStatus()">
+        Sort By Status
+    </button>
+
+    <p id="emptyState"
+    style="text-align:center;opacity:0.7;">
+        No universities added yet 🎓
+    </p>
+
+    <div id="universityList"></div>
+
+</div>
+<h2>Upcoming Deadlines</h2>
+
+<div id="timeline"></div>
+<script src="script.js"></script>
+
+</body>
+</html>
+<button onclick="sortByDeadline()">
+    Sort By Deadline
+</button>
+
+<button onclick="sortByStatus()">
+    Sort By Status
+</button>
+
+<button onclick="exportCSV()">
+    Export CSV
+</button>
+<select id="countryFilter" onchange="filterCountry()">
+    <option value="All">All Countries</option>
+    <option value="USA">USA</option>
+    <option value="UK">UK</option>
+    <option value="Canada">Canada</option>
+    <option value="Australia">Australia</option>
+    <option value="Germany">Germany</option>
+</select>
+<div class="card">
+
+    <h2>Admission Chance Calculator</h2>
+
+    <input id="gradeInput" placeholder="A-Level Grade %">
+
+    <input id="satInput" placeholder="SAT Score">
+
+    <input id="ieltsInput" placeholder="IELTS Score">
+
+    <button onclick="calculateChance()">
+        Calculate
+    </button>
+
+    <h3 id="chanceResult"></h3>
+
+</div>
+<h2>Upcoming Deadlines</h2>
+
+<div id="timeline"></div>
+<div class="card">
+
+    <h2>Application Statistics</h2>
+
+    <p>Total Universities:
+        <span id="totalUniversities">0</span>
+    </p>
+
+    <p>Submitted Applications:
+        <span id="submittedCount">0</span>
+    </p>
+
+    <p>Accepted Applications:
+        <span id="acceptedCount">0</span>
+    </p>
+
+    <div class="progress-container">
+        <div id="progressBar" class="progress-bar"></div>
+    </div>
+
+    <div class="progress-container">
+    <div id="progressBar"
+         class="progress-bar">
+    </div>
+</div>
+
+</div>
+<footer class="footer">
+    <p>University Application Tracker v1.0</p>
+    <p>Developed by Sohaib Amjad</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
