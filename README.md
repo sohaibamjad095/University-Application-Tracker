@@ -27,9 +27,9 @@ Applying to multiple universities can be difficult to manage. This project was c
 
  📸 Screenshots
 
-(screenshot.jpg)
-(screenshot2.jpg)
-(screenshot3.jpg)
+(screenshot.jpeg)
+(screenshot(2).jpeg)
+(screenshot(3).jpeg)
 
 📱 Live Demo
 
