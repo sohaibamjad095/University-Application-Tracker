@@ -25,12 +25,6 @@ A smart web application designed to help students manage their university applic
 
 Applying to multiple universities can be difficult to manage. This project was created to help students keep track of important application information, deadlines, and priorities in a simple and user-friendly interface.
 
- 📸 Screenshots
-
-(screenshot.jpeg)
-(screenshot(2).jpeg)
-(screenshot(3).jpeg)
-
 📱 Live Demo
 
 https://sohaibamjad095.github.io/University-Application-Tracker/
